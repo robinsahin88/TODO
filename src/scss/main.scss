@@ -1,3 +1,5 @@
+@use "mixins" as m;
+
 * {
     margin: 0;
     padding: 0;
@@ -78,16 +80,13 @@ header {
                 
             }
 
-            &__completeBtn, &__trashBtn {
-                background: #ff5d73;
-                color: white;
-                border: none;
-                padding: 1rem;
-                cursor: pointer;
-                font-size: 2rem;
+           &__trashBtn {
+                @include m.buttons;
             }
 
             &__completeBtn {
+                @include m.buttons;
+
                 background: #76b041
             }
     
@@ -98,9 +97,11 @@ header {
    
 
     .completed {
-        text-decoration: line-through;
+
+       text-decoration: line-through;
+       -webkit-text-decoration: line-through;
        text-decoration-color: #ff5d73;
-       
+       -webkit-text-decoration-color:#ff5d73;
     } 
 
     .bi {
@@ -111,10 +112,11 @@ header {
 }
 
 
-.deleteAll_btn{
+.deleteAll_btn {
        width: 30%;
         background-color: #ff5d73;
         color: black;
         font-family: 'Times New Roman', Times, serif;
         font-size: 2rem;
+        margin: 10px;
 }

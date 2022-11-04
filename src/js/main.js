@@ -1,4 +1,4 @@
-import { Task } from "./models/class";
+import { Task } from "./models/Task";
 
 window.addEventListener("load", () => {
     myTaskArray = JSON.parse(localStorage.getItem("myTaskArray")).map((addedTask)=>{
@@ -70,6 +70,8 @@ function displayList() {
         });
     }
 
+    console.log(myTaskArray);
+
 }
 
 function deleteCheck(event) {
@@ -101,3 +103,5 @@ window.location.reload();
 
 let deleteAllBtn = document.getElementById("deleteAll");
 deleteAllBtn.addEventListener("click", clearAll);
+
+
