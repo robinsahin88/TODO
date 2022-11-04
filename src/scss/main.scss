@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eae1df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    background-color:#edd83d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    h1  {
+    font-family: 'Fasthand', cursive;
+    font-size: 7rem;
+    color: black;
+    }
+ 
+}
+
+.inputform {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__todoinput {
+        min-width: 50%;
+        padding: 5px;
+        border: 2px solid black;
+        margin-right: 10px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 2rem;
+        
+
+    }
+    &__todobutton {
+        width: 50px;
+        border: 2px solid black;
+    
+    }
+}
+
+.todoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .todolist {
+        min-width: 50%;
+        list-style: none;
+
+
+        .todo {
+            margin: 0.5rem;
+            background: white;
+            color: black;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__item {
+                flex: 1; 
+                padding: 5px;
+                font-family: 'Indie Flower', cursive;
+                font-size: 2rem;
+                
+            }
+
+            &__completeBtn, &__trashBtn {
+                background: #ff5d73;
+                color: white;
+                border: none;
+                padding: 1rem;
+                cursor: pointer;
+                font-size: 2rem;
+            }
+
+            &__completeBtn {
+                background: #76b041
+            }
+    
+        }
+    
+    }
+
+   
+
+    .completed {
+        text-decoration: line-through;
+       text-decoration-color: #ff5d73;
+       
+    } 
+
+    .bi {
+        pointer-events: none;
+    }
+   
+   
+}
+
+
+.deleteAll_btn{
+       width: 30%;
+        background-color: #ff5d73;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+}
