@@ -1,5 +1,7 @@
+@use "variables" as v;
+
 @mixin buttons {
-    background: #ff5d73;
+    background: v.$pinky;
     color: white;
     border: none;
     padding: 1rem;

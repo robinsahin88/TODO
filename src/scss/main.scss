@@ -1,4 +1,5 @@
 @use "mixins" as m;
+@use "variables" as v;
 
 * {
     margin: 0;
@@ -100,8 +101,8 @@ header {
 
        text-decoration: line-through;
        -webkit-text-decoration: line-through;
-       text-decoration-color: #ff5d73;
-       -webkit-text-decoration-color:#ff5d73;
+       text-decoration-color: v.$pinky;
+       -webkit-text-decoration-color:v.$pinky;
     } 
 
     .bi {
@@ -114,7 +115,7 @@ header {
 
 .deleteAll_btn {
        width: 30%;
-        background-color: #ff5d73;
+        background-color:v.$pinky;
         color: black;
         font-family: 'Times New Roman', Times, serif;
         font-size: 2rem;
